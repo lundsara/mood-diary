@@ -5,7 +5,7 @@ class Home extends Component {
   render() {
     return (
       <div id="home">
-      <p id="welcome">Welcome to Event Feels! <br /> The only place in the universe to find how your event <br/>made others feel using sentiment analysis!</p>
+      <p id="welcome">Welcome to Mood Diary! <br /> Keep track of your thoughts with <br/>the benefit of artificial intelligence to help you<br/> keep track of your mood!</p>
       <p id="enter"><Link to="/login">Enter</Link></p>
     </div>
     );

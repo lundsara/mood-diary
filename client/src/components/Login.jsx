@@ -34,6 +34,7 @@ class Login extends Component {
                   <ReviewList
                   getReviewToUpdate={this.props.getReviewToUpdate}
                   reviews={this.props.reviews}
+                  removeReview={this.props.removeReview}
                   />
                 </div>
               </section>
@@ -47,7 +48,7 @@ class Login extends Component {
           </div>
           :
           <div className="wrapper">
-            <p>You must be logged in to see the reviews list and submit to it.</p>
+            <p id="warn">You must be logged in to see the reviews list and submit to it.</p>
           </div>
         }
       </div>

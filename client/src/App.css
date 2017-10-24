@@ -1,8 +1,12 @@
+body {
+  background-color: #ffdbdb;
 
+}
 .app {
   text-align: center;
-  background: white;
-  font-family: 'Arsenal', sans-serif;
+  background-color: #ffdbdb;
+  font-family: 'Merriweather', serif;
+
 }
 .login {
   text-align: center;
@@ -35,30 +39,31 @@ nav ul li {
   list-style-type: none;
 }
 
+
 nav ul li a {
   list-style-type: none;
-  color: black;
+  color: white;
   text-decoration: none;
    list-style-type: none;
 }
 
  nav ul li a:hover {
   font-weight: bold;
-  color: steelblue;
+  color: cornflowerblue;
 }
 button:hover {
   font-weight: bold;
-  background-color: steelblue;
+  background-color: cornflowerblue;
 }
 
 a:hover {
   font-weight: bold;
-  color: steelblue;
+  color: cornflowerblue;
   }
 
 
 p{
-  font-size: 40px;
+  font-size: 50px;
 }
 
 .result{
@@ -72,9 +77,10 @@ textarea {
   background-color: white;
   border-radius: 0px;
   margin-bottom: 20px;
-  border: solid steelblue 4px;
+ border: none;
   font-size: 18px;
-  font-family: 'Arsenal', sans-serif;
+  font-family: 'Merriweather', serif;
+  color: black;
 }
 
 form {
@@ -102,6 +108,8 @@ header {
   box-shadow: 0 0 25px rgba(21,30,53,.15);
   background-position: right top;
   z-index: 500;
+  color: white;
+  background-color: #ffdbdb;
 
 }
 
@@ -120,13 +128,14 @@ a  {
   color: black;
   margin-top: -125px;
   margin-right: 10px;
+  color: white;
 
 }
 button  {
   margin: auto;
-  font-family: 'Arsenal', sans-serif;
+  font-family: 'Merriweather', serif;
   border-radius: 5px;
-  background-color: cornflowerblue;
+  background-color: #ffdbdb;
   padding: 10px 30px;
   font-size: 18px;
   padding: 12px;
@@ -137,6 +146,7 @@ button  {
   height: 50px;
   border: solid white;
   text-align: center;
+  color: white;
 
 }
 
@@ -174,8 +184,9 @@ list-style: none;
   list-style: none;
   margin-left: 250px;
   background-color: white;
-  border: solid steelblue 4px;
-  font-size: 20px;
+
+  font-size: 25px;
+  background-image: url("https://i.imgur.com/L8WVd0s.jpg");
 }
 
 #feels-review {
@@ -192,8 +203,10 @@ footer {
   margin-top: 1280px;
   color: black;
   padding: 2% 3%;
-  background-color: white;
+  background-color:#ffdbdb;;
   box-shadow:  0 0 25px rgba(21,30,53,.15);
+  color: white;
+  font-size: 30px;
 }
 
 .wrapper {
@@ -204,6 +217,7 @@ footer {
 #title{
   margin-top: -10px;
   font-size: 60px;
+
 }
 #user {
   height: 50px;
@@ -220,11 +234,13 @@ footer {
   width: 200px;
   margin-top: 160px;
 
+
 }
 
 #welcome {
   text-align: center;
   margin: 0 auto;
+  color: white;
 }
 #logo {
   font-size: 16px;
@@ -270,14 +286,14 @@ z-index: 500;
 h3 {
   text-align: left;
   padding: 25px;
-  margin-top: -130px;
+  margin-top: -80px;
 }
 
 .link {
   margin: auto;
   font-family: 'Arsenal', sans-serif;
   border-radius: 5px;
-  background-color: cornflowerblue;
+  background-color: rgb(9, 250, 144);
   padding: 10px 30px;
   font-size: 18px;
   padding: 12px;
@@ -293,6 +309,14 @@ h3 {
 }
 .person {
   font-size: 20px;
+}
+
+h2{
+  color: white;
+}
+#warn{
+  color: white;
+  margin-top: -200px;
 }
 
 

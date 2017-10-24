@@ -5,7 +5,7 @@ class Footer extends Component {
     return (
 
       <footer>
-      <p id='logo'>GREATIDEASINC.</p>
+      <p id='logo'>Mood Diary</p>
       </footer>
 
     );

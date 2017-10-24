@@ -11,7 +11,7 @@ const ReviewList = props => (
           {/* map over all reviews and display on page */}
           {
             props.reviews.map(review =>
-              <Review review={review}>
+              <Review review={review} >
                 <Feels sentimentList={review.feels} />
               </Review>
             )

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import firebase, { auth, provider } from './firebase';
 import Header from './components/partials/header';
-import Footer from './components/partials/footer';
+
 import Nav from './components/partials/nav';
 import Home from './components/Home';
 import Login from './components/Login';
@@ -34,12 +34,12 @@ class App extends Component {
     // binding functions
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.updateReview = this.updateReview.bind(this);
+    // this.updateReview = this.updateReview.bind(this);
     this.handleCall = this.handleCall.bind(this);
     this.percent = this.percent.bind(this);
     this.login = this.login.bind(this);
     this.logout = this.logout.bind(this);
-    this.getReviewToUpdate = this.getReviewToUpdate.bind(this);
+    // this.getReviewToUpdate = this.getReviewToUpdate.bind(this);
 
   }
   handleChange(e) {
@@ -150,52 +150,52 @@ percent(num) {
     reviewRef.remove();
   }
 
-  getReviewToUpdate(id){
-    const reviewRef = firebase.database().ref(`/reviews/${id}`)
-    .once('value')
-    .then(snapshot=> {
-      const review = snapshot.val().title;
-      console.log(review);
-      this.setState({
-        reviewToUpdate: review,
-        reviewToUpdateID: id
-      })
-    });
+  // getReviewToUpdate(id){
+  //   const reviewRef = firebase.database().ref(`/reviews/${id}`)
+  //   .once('value')
+  //   .then(snapshot=> {
+  //     const review = snapshot.val().title;
+  //     console.log(review);
+  //     this.setState({
+  //       reviewToUpdate: review,
+  //       reviewToUpdateID: id
+  //     })
+  //   });
 
-  }
+  // }
 
-  updateReview(e) {
-    e.preventDefault();
+  // updateReview(e) {
+  //   e.preventDefault();
 
-    axios.post('http://localhost:3003/api/test',{
-      text: this.state.currentReview
-    })
-    .then((res) => {
+  //   axios.post('http://localhost:3003/api/test',{
+  //     text: this.state.currentReview
+  //   })
+  //   .then((res) => {
 
-      let emotionScore = this.percent(res.data.score.document_tone.tone_categories["0"].tones["3"].score);
+  //     let emotionScore = this.percent(res.data.score.document_tone.tone_categories["0"].tones["3"].score);
 
-      this.setState({
-        parsedEmotion: res.data.score.document_tone.tone_categories["0"].tones["3"].tone_name,
-        parsedSentiment: res.data.score.document_tone.tone_categories["0"].tones,
-        parsedScore: this.percent(res.data.score.document_tone.tone_categories["0"].tones["3"].score),
-      })
-      console.log('the data that came back: ', res);
-    })
-    .then(() => {
-      const reviewsRef = firebase.database().ref(`/reviews/${this.state.reviewToUpdateID}`);
-      const newReview = {
-        title: this.state.currentReview,
-        user: this.state.user.displayName || this.state.user.email,
-        feels: this.state.parsedSentiment
-      };
-      reviewsRef.set(newReview);
-      this.setState({
-        currentReview: '',
-        username: '',
-      });
-    })
-    .catch(err => console.error(err));
-  }
+  //     this.setState({
+  //       parsedEmotion: res.data.score.document_tone.tone_categories["0"].tones["3"].tone_name,
+  //       parsedSentiment: res.data.score.document_tone.tone_categories["0"].tones,
+  //       parsedScore: this.percent(res.data.score.document_tone.tone_categories["0"].tones["3"].score),
+  //     })
+  //     console.log('the data that came back: ', res);
+  //   })
+  //   .then(() => {
+  //     const reviewsRef = firebase.database().ref(`/reviews/${this.state.reviewToUpdateID}`);
+  //     const newReview = {
+  //       title: this.state.currentReview,
+  //       user: this.state.user.displayName || this.state.user.email,
+  //       feels: this.state.parsedSentiment
+  //     };
+  //     reviewsRef.set(newReview);
+  //     this.setState({
+  //       currentReview: '',
+  //       username: '',
+  //     });
+  //   })
+  //   .catch(err => console.error(err));
+  // }
 
 
   loginComponent(props) {
@@ -263,7 +263,7 @@ render() {
           <Route exact path="/login" render={(props) => this.loginComponent(props) } />
           <Route exact path="/update" render={(props) => this.updateComponent(props) } />
          </Switch>
-        <Footer />
+
      </div>
     </Router>
   </div>

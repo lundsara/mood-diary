@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "staging": "mood-diary-c02ee",
+    "default": "mood-diary-c02ee"
+  }
+}
