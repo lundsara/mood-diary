@@ -1,2 +1,10 @@
-# Project-3
-A text analysis application that evaluates reviews of events through sentiment awareness AI
+# Mood Diary
+
+A text analysis application that evaluates sentiment within diary entries through using the IBM Watson API
+
+## Technologies:
+-IBM Watson API
+-React.js
+-Express.js
+
+<img src="https://i.imgur.com/mm4dBrg.png"/>
