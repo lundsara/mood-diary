@@ -19,8 +19,6 @@ This application allows an individual to create diary entries based on their cur
 ## User story #
 
 
-![eventfeels](https://git.generalassemb.ly/storage/user/7166/files/4e7a15dc-a2b4-11e7-8875-c41bc7401f29)
-
 * When the user starts the app, they will either login to an existing account or create a brand new account
 * Once the user signs in, they will be able to either check out other people reviews about different events that they had attended or the user can write a review of their own about an event they had attended
 * Thanks to IBM watson API, it will dispaly five different types of feelings: anger, disgust, fear, joy, sadness. IMB watson will grade the user on each category based on how they are feeling. 
