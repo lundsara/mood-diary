@@ -1,8 +1,10 @@
-# Project-3
+# Mood Diary
+
+![alt text](https://i.imgur.com/W8XuXV4.png)
 
 ## App proposal #
 
-We will create an app that will allow people to write reviews based on how they feel attended social events. We will use IBM watson API to parse through what the user inputted which will give back data on the emotional feelings through sentiment awareness AI. The feelings range from: anger, disgust, fear, joy, sadness.
+This application allows an individual to create diary entries based on their current emotional state. The IBM watson API is employed to parse through what the user input which will render data through the sentiment awareness AI. The feelings range from: anger, disgust, fear, joy, sadness.
 
 ## Technologies used # 
 
@@ -13,16 +15,6 @@ We will create an app that will allow people to write reviews based on how they 
 * Google Firebase
 * IBM Tone Analyzer API
 
-## MVP #
-
-* Create server
-* Create DB
-* Create google auth login
-* CRUD 
-
-## Post-MVP #
-
-* Use a second API
 
 ## User story #
 
@@ -46,18 +38,4 @@ We will create an app that will allow people to write reviews based on how they 
 ![new mockup 5](https://git.generalassemb.ly/storage/user/7166/files/e11fd67e-a2af-11e7-8322-f8755e114700)
 
 
-## Code snipit that we are proud of #
 
-Chris 
-![screen shot 2017-09-26 at 12 37 36 pm](https://git.generalassemb.ly/storage/user/7166/files/9ce649f4-a2b7-11e7-871a-5d6a90753365)
-
-Angel
-![screen shot 2017-09-26 at 12 40 29 pm](https://git.generalassemb.ly/storage/user/7166/files/0226f6d8-a2b8-11e7-9130-7a047a2c4a52)
-
-
-
-## Future updates 
-
-
-
-A text analysis application that evaluates reviews of events through sentiment awareness AI
