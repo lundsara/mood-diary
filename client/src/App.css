@@ -1,24 +1,342 @@
-.App {
+
+.app {
   text-align: center;
+  background-color: #ffdbdb;
+   font-family: Merriweather,serif;
+
+}
+.login {
+  text-align: center;
+  margin-top: 350px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+
+li {
+  list-style: none;
+  list-style-type: none;
+
+}
+ul{
+  list-style: none;
+  list-style-type: none;
+
+
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+nav ul {
+  display: flex;
+  margin: 20px;
+  list-style-type: none;
+  margin-top: -20px;
+}
+
+nav ul li {
+  padding: 5px;
+
+  letter-spacing: 1px;
+  list-style-type: none;
+}
+
+nav ul li a {
+  list-style-type: none;
+  color: black;
+  text-decoration: none;
+   list-style-type: none;
+}
+
+ nav ul li a:hover {
+  font-weight: bold;
+  color: steelblue;
+}
+button:hover {
+  font-weight: bold;
+  background-color: steelblue;
+  font-family: Merriweather,serif;
+}
+
+a:hover {
+  font-weight: bold;
+  color: steelblue;
+  }
+
+
+p{
+  font-size: 40px;
+}
+
+.result{
+  font-size: 20px;
+}
+
+textarea {
+ margin: 0 auto;
+  width: 1000px;
+  height: 300px;
+  background-color: white;
+  border-radius: 0px;
+  margin-bottom: 20px;
+  border: solid steelblue 4px;
+  font-size: 18px;
+  font-family: 'Old Standard TT', serif;
+}
+
+form {
+  display: block;
+  margin-left: -1500px;
 }
 
 .App-intro {
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  height: 60px;
+  margin: auto;
+  padding: 2% 3%;
+  background-color: #ffdbdb;
+  box-shadow: 0 0 25px rgba(21,30,53,.15);
+  background-position: right top;
+  z-index: 500;
+
 }
+
+a  {
+  margin: auto;
+  text-align: center;
+  padding: 10px 30px;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  min-width: 90px;
+  position: relative;
+  color: black;
+  margin-top: -125px;
+  margin-right: 30px;
+  margin-left: -30px;
+
+}
+button  {
+  margin: auto;
+  font-family: Merriweather,serif;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  padding: 10px 30px 10px 30px;
+  font-size: 18px;
+  padding: 12px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  border-radius: 5px;
+  text-decoration: none;
+  width: 150px;
+  height: 50px;
+  border: solid white;
+  text-align: center;
+
+}
+
+
+#review {
+
+margin: 0 auto;
+text-align: center;
+margin-bottom: 80px;
+margin-top: 600px;
+text-align: center;
+list-style: none;
+}
+
+
+  .userinfo {
+   position: absolute;
+   top: 200px;
+   right: 40px;
+   width: 100px;
+   height: 100px;
+ }
+
+
+#box {
+  display: flex;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 150px;
+  width: 1000px;
+  min-height: 500px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  list-style: none;
+  margin-left: 160px;
+  background-image: url("https://i.imgur.com/L8WVd0s.jpg");
+  border: solid steelblue 4px;
+  font-size: 35px;
+  padding:   100px 10px 10px 10px;
+ margin-right: 230px;
+}
+
+#feels-review {
+  padding:40px;
+  margin: 0 auto;
+  text-align: center;
+
+
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  margin-top: 1280px;
+  color: black;
+  padding: 2% 3%;
+  background-color: white;
+  box-shadow:  0 0 25px rgba(21,30,53,.15);
+}
+
+.wrapper {
+  margin-top: 180px;
+  margin-bottom: 80px;
+}
+
+#title{
+  margin-top: -10px;
+  font-size: 60px;
+  margin-left: -860px;
+  padding: 10px;
+
+}
+#user {
+  height: 50px;
+}
+
+#single {
+  margin-top: -400px;
+  margin-bottom: 300px;
+}
+
+#enter {
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  margin-top: 160px;
+  margin-left: 700px;
+}
+
+#welcome {
+  text-align: center;
+
+  font-size: 22px;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+#logo {
+  font-size: 16px;
+}
+#home{
+  margin-top: 200px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 200px;
+
+}
+
+body{
+display: block;
+height: infinite;
+overflow-y: auto;
+z-index: 500;
+background-color: #ffdbdb;
+}
+
+.userReview {
+  padding: 10px;
+}
+
+#foot {
+  padding:200px;
+}
+
+.container {
+  display: flex;
+  position: absolute;
+}
+.update-review {
+  margin: 0 auto;
+  margin-right: -1280px;
+  margin-top: 250px;
+}
+.display-review{
+  display: inline;
+ height: 9000;
+ margin-bottom: 100px;
+
+}
+h3 {
+  text-align: left;
+  padding: 25px;
+  margin-top: -130px;
+  font-size: 30px;
+}
+
+.link {
+  margin: auto;
+  font-family: 'Arsenal', sans-serif;
+  border-radius: 5px;
+  background-color: cornflowerblue;
+  padding: 10px 30px;
+  font-size: 18px;
+  padding: 12px;
+  box-shadow: inset 0 -3px 0 rgba(0,0,0,.2);
+  border-radius: 5px;
+  text-decoration: none;
+  width: 110px;
+  height: 20px;
+  border: solid white;
+  text-align: center;
+  text-align: center;
+
+}
+.person {
+  font-size: 20px;
+}
+
+.feel{
+  font-size: 20px;
+}
+
+aside{
+  float: left;
+  margin-left: 150px;
+
+}
+
+img{
+  width: 250px;
+  height: 300px;
+}
+#lister{
+  float:right;
+
+}
+
+#enter{
+
+text-align: center;
+
+}
+
+
+
+
