@@ -337,6 +337,49 @@ text-align: center;
 
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+
+
+      width: 100%;
+  }
+
+
+
+
+
+
+
+a{
+font-size: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+nav li{
+
+  color: grey;
+  display: inline;
+  padding: 6px;
+  font-size: 14px;
+  font-family: 'Shrikhand', cursive;
+}
+nav {
+  margin-left: -50px;
+}
+
+
+
+
+
+}
+
+
+
+
+
+
+
 
 
 
